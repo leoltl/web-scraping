@@ -17,7 +17,7 @@ import time
 #####################################
 
 
-toCheck = ['B0747W9SBN','B01IWLHXZS','B074B1LRCC','B01LQVKIP8','B06Y38HJ5H','B00YBXHLSQ','B01N18L5M1','B00Y5R55C2','B00Y5R6Z8U']
+toCheck = [] #input list of product ASIN 
 result = []
 num = 1
 for ASIN in toCheck:
