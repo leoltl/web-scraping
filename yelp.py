@@ -1,3 +1,14 @@
+#####################################
+#for learning purposes only
+#This script automates the task of retrieving Business info from Yelp search result
+#Including business name, category of business, average rating of business
+#business address, and number of reviews. It parses the data removing non critical info
+#and save it in comma separated value files (.csv) for further analysis and data storage
+#####################################
+
+
+
+
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import re
@@ -75,7 +86,7 @@ f.close()
 
 f = open(filename,"a")
 
-#get first 18 pages of Yelp search result
+#get 2nd to 18th pages of Yelp search result
 for k in range(1,18):
 
 	targeturl = "https://www.yelp.ca/search?find_loc="+ location + ",+"  + province + "&start=" + str(10*k) 
